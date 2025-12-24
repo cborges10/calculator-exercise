@@ -1,8 +1,5 @@
 pipeline {
-    agent {
-        dockerContainer {
-            image 'python:3.11-slim'
-        }
+    agent { cloud 'docker-python-agent'
     }
     triggers {
         pollSCM('* * * * *')
