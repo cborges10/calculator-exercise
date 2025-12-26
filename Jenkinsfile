@@ -5,7 +5,7 @@ pipeline {
     }
 
     stages {
-        stage('Test') {
+        11stage('Test') {
             steps {
                 echo 'Testing...'
                 sh 'python3 test_calculator.py'
